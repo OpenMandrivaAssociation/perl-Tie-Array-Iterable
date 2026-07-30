@@ -3,13 +3,13 @@
 
 Name:		perl-%{upstream_name}
 Version:	%{upstream_version}
-Release:	7
+Release:	1
 
 Summary:	Forward Iterator object
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Tie-Array-Iterable
-Source0:	https://cpan.metacpan.org/authors/id/M/MN/MNEYLON/Tie-Array-Iterable-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MN/MNEYLON/Tie-Array-Iterable-0.03.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -54,16 +54,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/*
 
 
-%changelog
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 0.30.0-3mdv2011.0
-+ Revision: 655237
-- rebuild for updated spec-helper
-
-* Mon Nov 16 2009 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-2mdv2011.0
-+ Revision: 466616
-- rebuild
-- import perl-Tie-Array-Iterable
-
-
-* Sun Oct 18 2009 cpan2dist 0.03-1mdv
-- initial mdv release, generated with cpan2dist
